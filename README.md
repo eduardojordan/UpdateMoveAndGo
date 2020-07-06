@@ -18,7 +18,7 @@ Algunas mejoras realizadas sobre la base del proyecto anterior
 
 ## Image Captures
 
-![image](imgMoveAndGo)
+![image](imgMoveAndGo.png)
 
 ## Desarrollo
 
