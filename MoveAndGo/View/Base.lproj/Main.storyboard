@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FVy-Ch-jdf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation View Controller-->
+        <scene sceneID="w5o-5C-B35">
+            <objects>
+                <viewController id="FVy-Ch-jdf" customClass="AnimationViewController" customModule="MoveAndGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgU-tW-JqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUd-Rf-Yme" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="65" y="275" width="285" height="347"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Y4-yB-81c" firstAttribute="trailing" secondItem="gUd-Rf-Yme" secondAttribute="trailing" constant="64" id="DIM-Cc-Uz7"/>
+                            <constraint firstItem="1Y4-yB-81c" firstAttribute="bottom" secondItem="gUd-Rf-Yme" secondAttribute="bottom" constant="240" id="c9V-70-GRG"/>
+                            <constraint firstItem="gUd-Rf-Yme" firstAttribute="leading" secondItem="1Y4-yB-81c" secondAttribute="leading" constant="65" id="xzQ-uo-ptz"/>
+                            <constraint firstItem="gUd-Rf-Yme" firstAttribute="top" secondItem="1Y4-yB-81c" secondAttribute="top" constant="231" id="zsX-3W-sJS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Y4-yB-81c"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="gUd-Rf-Yme" id="Lhb-3A-RYu"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="NextSceneSegue" id="QHN-O5-l8a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJs-EP-F3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-800.00000000000011" y="109.82142857142857"/>
+        </scene>
+        <!--Map LocationVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MapLocationVC" customModule="MoveAndGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdM-iN-WCA" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kdM-iN-WCA" secondAttribute="trailing" id="bEv-EG-NJF"/>
+                            <constraint firstItem="kdM-iN-WCA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gdo-2F-8bT"/>
+                            <constraint firstItem="kdM-iN-WCA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="gk3-0Y-5Ss"/>
+                            <constraint firstItem="kdM-iN-WCA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tjC-i0-KTc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kNc-ps-VXF"/>
+                    <connections>
+                        <outlet property="MapView" destination="kdM-iN-WCA" id="mwA-zp-aKW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
