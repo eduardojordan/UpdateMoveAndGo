@@ -22,10 +22,10 @@ Algunas mejoras realizadas sobre la base del proyecto anterior
 
 ## Desarrollo
 
-Xcode 11.2.1
-iOS 13 or posterior
-OS X 10.14.6
-iphone X and iphone SE Compatible
+- Xcode 11.2.1
+- iOS 13 or posterior
+- OS X 10.14.6
+- iphone X and iphone SE Compatible
 
 ## Cocoapods
 
