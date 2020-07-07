@@ -15,6 +15,19 @@ Algunas mejoras realizadas sobre la base del proyecto anterior
 - Se agrego el manejo de errores en la llamada de Datos 
 - Se agrego Alerta cuando no existe conexión a internet
 
+## Incluido en esta practica
+
+	- Xcode 11.2.1
+	-	iOS 13
+	-	Swift
+	-	TDD
+	-	CocoaPods
+	-	GoogleMaps
+	-	GCD
+	-	UI
+	-	MVC
+	-	Git
+
 
 ## Image Captures
 
