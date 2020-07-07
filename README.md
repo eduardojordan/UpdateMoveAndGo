@@ -17,7 +17,7 @@ Algunas mejoras realizadas sobre la base del proyecto anterior
 
 ## Incluido en esta practica
 
-	- Xcode 11.2.1
+	-       Xcode 11.2.1
 	-	iOS 13
 	-	Swift
 	-	TDD
